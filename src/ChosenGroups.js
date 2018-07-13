@@ -19,12 +19,12 @@ class ChosenGroups extends Component {
         if (props.buildGroups && props.groups.length >=1){
             for (let i=0; i < props.groups.length; i++){
 
-                let chosenUser = props.groups[i].map((user) => 
+                let chosenUser = props.groups[i].map((user) =>
                     <ChosenUser key={ user.real_name } user={ user } isGrouped={ props.buildGroups }></ChosenUser>
                 )
 
                 let groupUserFeed =
-                    <Card key={i.toString()} raised color="violet">
+                    <Card key={i.toString()} raised color='violet'>
                         <Card.Content>
                             <Card.Header>Group {i}</Card.Header>
                         </Card.Content>
@@ -34,7 +34,7 @@ class ChosenGroups extends Component {
                             </Feed>
                         </Card.Content>
                     </Card>;
-                
+
                 cards.push(groupUserFeed);
             }
         }
