@@ -64,7 +64,7 @@ class ChosenUser extends Component {
             </Card>
         );
     }
-    
+
     render() {
         if (this.props.user) {
             return(
